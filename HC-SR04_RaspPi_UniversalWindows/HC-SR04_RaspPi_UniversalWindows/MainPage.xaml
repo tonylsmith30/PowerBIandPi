@@ -9,8 +9,9 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBox x:Name="HelloMessage" Text="Hello, World!" Margin="10" IsReadOnly="True"/>
-            <Button x:Name="ClickMe" Content="Click Me!"  Margin="10" HorizontalAlignment="Center" Click="ClickMe_Click"/>
+            <TextBox x:Name="HelloMessage" HorizontalAlignment="Center" Text="Hello, World!" Margin="10" IsReadOnly="True"/>
+            <Button x:Name="ClickMe" VerticalAlignment="Center" Content="Click Me!"  Margin="10" HorizontalAlignment="Center" Click="ClickMe_Click"/>
+            <Button x:Name="btnSendMessage" Content="Send Evenhub Message!" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnSendMessage_Click"/>
         </StackPanel>
     </Grid>
 </Page>
