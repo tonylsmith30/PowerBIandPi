@@ -123,12 +123,12 @@ namespace HC_SR04_RaspPi_UniversalWindows
                         Binary = System.Text.Encoding.UTF8.GetBytes(eventhubdata)
                     }
                 };
-
+                
                 message.MessageAnnotations = new Amqp.Framing.MessageAnnotations();
                 //message.MessageAnnotations[new Amqp.Types.Symbol("x-opt-partition-key")] =
                 //   string.Format("pk:", partitionkey);
 
-                senderlink.Send(message, 120000);
+                senderlink.Send(message, null, null);//120000);
             }
             catch(Exception ex)
             {
